@@ -1,0 +1,201 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space between logo and name */
+}
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007baf;
+    margin-left: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #007baf;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: #007baf;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.hero-logo {
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: white;
+    color: #007baf;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    opacity: 0.9;
+}
+
+/* ABOUT */
+.about {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+.about h2 {
+    color: #007baf;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* SERVICES */
+.services {
+    padding: 80px 7%;
+    background: #f3faff;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.service-box h3 {
+    color: #007baf;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    padding: 80px 7%;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #e9f5ff;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* CONTACT */
+.contact {
+    padding: 80px 7%;
+    background: #f3faff;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background: #007baf;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    opacity: 0.9;
+}
+
+/* FOOTER */
+footer {
+    background: #007baf;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-logo {
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE NAV (MOBILE) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Can be converted to mobile menu if needed */
+    }
+}
